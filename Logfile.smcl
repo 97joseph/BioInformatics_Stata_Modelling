@@ -1,0 +1,244 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}E:\ONLINE WORKING\BioInformatics_Stata_Modelling\Logfile.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}20 Mar 2021, 17:08:42
+
+{com}. . summarize wagest wagest2
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}wagest {c |}{res}        390    4.615641    .3470151       4.25       5.75
+{txt}{space 5}wagest2 {c |}{res}        389    4.996273    .2531905       4.25       6.25
+
+{com}. . describe
+
+{txt}Contains data from {res}E:\ONLINE WORKING\BioInformatics_Stata_Modelling\discrim - Copy.dta
+{txt}  obs:{res}           410                          
+{txt} vars:{res}            37                          8 Jan 2002 22:26
+{txt} size:{res}        47,150                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:psoda          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of medium soda, 1st wave{p_end}
+{p 0 48}{bind:pfries         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of small fries, 1st wave{p_end}
+{p 0 48}{bind:pentree        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price entree (burger or chicken), 1st wave{p_end}
+{p 0 48}{bind:wagest         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}starting wage, 1st wave{p_end}
+{p 0 48}{bind:nmgrs          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of managers, 1st wave{p_end}
+{p 0 48}{bind:nregs          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of registers, 1st wave{p_end}
+{p 0 48}{bind:hrsopen        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}hours open, 1st wave{p_end}
+{p 0 48}{bind:emp            }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of employees, 1st wave{p_end}
+{p 0 48}{bind:psoda2         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of medium soday, 2nd wave{p_end}
+{p 0 48}{bind:pfries2        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of small fries, 2nd wave{p_end}
+{p 0 48}{bind:pentree2       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price entree, 2nd wave{p_end}
+{p 0 48}{bind:wagest2        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}starting wage, 2nd wave{p_end}
+{p 0 48}{bind:nmgrs2         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of managers, 2nd wave{p_end}
+{p 0 48}{bind:nregs2         }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of registers, 2nd wave{p_end}
+{p 0 48}{bind:hrsopen2       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}hours open, 2nd wave{p_end}
+{p 0 48}{bind:emp2           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of employees, 2nd wave{p_end}
+{p 0 48}{bind:compown        }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if company owned{p_end}
+{p 0 48}{bind:chain          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}BK = 1, KFC = 2, Roy Rogers = 3, Wendy's = 4{p_end}
+{p 0 48}{bind:density        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}population density, town{p_end}
+{p 0 48}{bind:crmrte         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}crime rate, town{p_end}
+{p 0 48}{bind:state          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}NJ = 1, PA = 2{p_end}
+{p 0 48}{bind:prpblck        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion black, zipcode{p_end}
+{p 0 48}{bind:prppov         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion in poverty, zipcode{p_end}
+{p 0 48}{bind:prpncar        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion no car, zipcode{p_end}
+{p 0 48}{bind:hseval         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}median housing value, zipcode{p_end}
+{p 0 48}{bind:nstores        }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of stores, zipcode{p_end}
+{p 0 48}{bind:income         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}median family income, zipcode{p_end}
+{p 0 48}{bind:county         }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}county label{p_end}
+{p 0 48}{bind:lpsoda         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(psoda){p_end}
+{p 0 48}{bind:lpfries        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(pfries){p_end}
+{p 0 48}{bind:lhseval        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(hseval){p_end}
+{p 0 48}{bind:lincome        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(income){p_end}
+{p 0 48}{bind:ldensity       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(density){p_end}
+{p 0 48}{bind:NJ             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 for New Jersey{p_end}
+{p 0 48}{bind:BK             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Burger King{p_end}
+{p 0 48}{bind:KFC            }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Kentucky Fried Chicken{p_end}
+{p 0 48}{bind:RR             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Roy Rogers{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. codebook compown state NJ BK KFC RR
+
+{txt}{hline}
+{res}compown{right:=1 if company owned}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       269{col 33}0
+{col 21}       141{col 33}1
+
+{txt}{hline}
+{res}state{right:NJ = 1, PA = 2}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}1{txt},{res}2{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       331{col 33}1
+{col 21}        79{col 33}2
+
+{txt}{hline}
+{res}NJ{right:=1 for New Jersey}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}        79{col 33}0
+{col 21}       331{col 33}1
+
+{txt}{hline}
+{res}BK{right:=1 if Burger King}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       239{col 33}0
+{col 21}       171{col 33}1
+
+{txt}{hline}
+{res}KFC{right:=1 if Kentucky Fried Chicken}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       330{col 33}0
+{col 21}        80{col 33}1
+
+{txt}{hline}
+{res}RR{right:=1 if Roy Rogers}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}410
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       311{col 33}0
+{col 21}        99{col 33}1
+
+{com}. use "E:\ONLINE WORKING\BioInformatics_Stata_Modelling\prison - Copy.dta", clear
+
+. describe
+
+{txt}Contains data from {res}E:\ONLINE WORKING\BioInformatics_Stata_Modelling\prison - Copy.dta
+{txt}  obs:{res}           714                          
+{txt} vars:{res}             8                          8 Oct 2018 19:29
+{txt} size:{res}        18,564                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:state          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}alphabetical; DC=8{p_end}
+{p 0 48}{bind:year           }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}80 to 93{p_end}
+{p 0 48}{bind:black          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion black{p_end}
+{p 0 48}{bind:metro          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion in metro. areas{p_end}
+{p 0 48}{bind:unem           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion unemployed{p_end}
+{p 0 48}{bind:criv           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}viol. crimes per 100,000{p_end}
+{p 0 48}{bind:crip           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}prop. crimes per 100,000{p_end}
+{p 0 48}{bind:pris           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}prison pop. per 100,000{p_end}
+{txt}{hline}
+Sorted by: {res}state  year
+
+{com}. use
+{err}invalid file specification
+{txt}{search r(198), local:r(198);}
+
+{com}. use prison - Copy.dta
+{err}invalid '-' 
+{txt}{search r(198), local:r(198);}
+
+{com}. use "E:\ONLINE WORKING\BioInformatics_Stata_Modelling\discrim - Copy.dta", clear
+
+. describe
+
+{txt}Contains data from {res}E:\ONLINE WORKING\BioInformatics_Stata_Modelling\discrim - Copy.dta
+{txt}  obs:{res}           410                          
+{txt} vars:{res}            37                          8 Jan 2002 22:26
+{txt} size:{res}        47,150                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:psoda          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of medium soda, 1st wave{p_end}
+{p 0 48}{bind:pfries         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of small fries, 1st wave{p_end}
+{p 0 48}{bind:pentree        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price entree (burger or chicken), 1st wave{p_end}
+{p 0 48}{bind:wagest         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}starting wage, 1st wave{p_end}
+{p 0 48}{bind:nmgrs          }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of managers, 1st wave{p_end}
+{p 0 48}{bind:nregs          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of registers, 1st wave{p_end}
+{p 0 48}{bind:hrsopen        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}hours open, 1st wave{p_end}
+{p 0 48}{bind:emp            }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of employees, 1st wave{p_end}
+{p 0 48}{bind:psoda2         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of medium soday, 2nd wave{p_end}
+{p 0 48}{bind:pfries2        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price of small fries, 2nd wave{p_end}
+{p 0 48}{bind:pentree2       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}price entree, 2nd wave{p_end}
+{p 0 48}{bind:wagest2        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}starting wage, 2nd wave{p_end}
+{p 0 48}{bind:nmgrs2         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of managers, 2nd wave{p_end}
+{p 0 48}{bind:nregs2         }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of registers, 2nd wave{p_end}
+{p 0 48}{bind:hrsopen2       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}hours open, 2nd wave{p_end}
+{p 0 48}{bind:emp2           }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of employees, 2nd wave{p_end}
+{p 0 48}{bind:compown        }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if company owned{p_end}
+{p 0 48}{bind:chain          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}BK = 1, KFC = 2, Roy Rogers = 3, Wendy's = 4{p_end}
+{p 0 48}{bind:density        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}population density, town{p_end}
+{p 0 48}{bind:crmrte         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}crime rate, town{p_end}
+{p 0 48}{bind:state          }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}NJ = 1, PA = 2{p_end}
+{p 0 48}{bind:prpblck        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion black, zipcode{p_end}
+{p 0 48}{bind:prppov         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion in poverty, zipcode{p_end}
+{p 0 48}{bind:prpncar        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}proportion no car, zipcode{p_end}
+{p 0 48}{bind:hseval         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}median housing value, zipcode{p_end}
+{p 0 48}{bind:nstores        }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}number of stores, zipcode{p_end}
+{p 0 48}{bind:income         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}median family income, zipcode{p_end}
+{p 0 48}{bind:county         }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}county label{p_end}
+{p 0 48}{bind:lpsoda         }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(psoda){p_end}
+{p 0 48}{bind:lpfries        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(pfries){p_end}
+{p 0 48}{bind:lhseval        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(hseval){p_end}
+{p 0 48}{bind:lincome        }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(income){p_end}
+{p 0 48}{bind:ldensity       }{txt}{bind: float   }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}log(density){p_end}
+{p 0 48}{bind:NJ             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 for New Jersey{p_end}
+{p 0 48}{bind:BK             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Burger King{p_end}
+{p 0 48}{bind:KFC            }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Kentucky Fried Chicken{p_end}
+{p 0 48}{bind:RR             }{txt}{bind: byte    }{bind:{txt}%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}=1 if Roy Rogers{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. rename (chain ) (Chain that the restaurant belongs to)
+{res}{err}corresponding {it:oldnames} and {it:newnames} mismatch
+{p 4 4 2}
+You specified or implied 1 {it:oldname}
+and 6 {it:newname};
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. rename (chain ) (Chain that the restaurant belongs to)
+{res}{err}corresponding {it:oldnames} and {it:newnames} mismatch
+{p 4 4 2}
+You specified or implied 1 {it:oldname}
+and 6 {it:newname};
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. 
